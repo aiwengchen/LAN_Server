@@ -70,6 +70,9 @@ BOOL CServerApp::InitInstance()
 	// 例如修改为公司或组织名
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
 
+	WSADATA data;
+	WSAStartup(2, &data);
+
 	CServerDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
@@ -100,3 +103,12 @@ BOOL CServerApp::InitInstance()
 	return FALSE;
 }
 
+
+
+int CServerApp::ExitInstance()
+{
+	// TODO: 在此添加专用代码和/或调用基类
+	WSACleanup();
+
+	return CWinApp::ExitInstance();
+}

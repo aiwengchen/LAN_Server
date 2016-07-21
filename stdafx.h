@@ -33,12 +33,11 @@
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 
+#include "Winsock2.h"
+#pragma comment (lib,"Ws2_32.lib")
 
-
-
-
-
-
+#include "mysql.h"
+#pragma comment(lib,"libmysql.lib")
 
 
 #ifdef _UNICODE
