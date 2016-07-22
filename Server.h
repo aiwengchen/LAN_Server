@@ -9,7 +9,7 @@
 #endif
 
 #include "resource.h"		// 主符号
-
+#include "DataManage.h"
 
 // CServerApp: 
 // 有关此类的实现，请参阅 Server.cpp
@@ -19,6 +19,7 @@ class CServerApp : public CWinApp
 {
 public:
 	CServerApp();
+	CDataManage m_DataManage;
 
 // 重写
 public:

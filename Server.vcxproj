@@ -190,6 +190,8 @@
   <ItemGroup>
     <ClInclude Include="CustomButton.h" />
     <ClInclude Include="DataManage.h" />
+    <ClInclude Include="Login.h" />
+    <ClInclude Include="OprManage.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="ServerDlg.h" />
@@ -199,6 +201,8 @@
   <ItemGroup>
     <ClCompile Include="CustomButton.cpp" />
     <ClCompile Include="DataManage.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="OprManage.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="ServerDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -215,6 +219,7 @@
     <None Include="res\Server.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\TM\04\局域网视频监控\Server\res\03.ico" />
     <Image Include="..\..\..\TM\04\局域网视频监控\Server\res\button1.bmp" />
     <Image Include="res\Server.ico" />
   </ItemGroup>

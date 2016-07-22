@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "Server.h"
 #include "ServerDlg.h"
+#include "Login.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -72,6 +73,14 @@ BOOL CServerApp::InitInstance()
 
 	WSADATA data;
 	WSAStartup(2, &data);
+
+	m_DataManage.InitDatabase();
+
+	CLogin login;
+	if (login.DoModal() != IDOK)
+	{
+		return FALSE;
+	}
 
 	CServerDlg dlg;
 	m_pMainWnd = &dlg;
